@@ -1,12 +1,14 @@
 /*window.onload = function () {
     document.body.innerHTML = '<h1>VUELVE A ABRILO CON EDGE ATREVETE!</h1>';
 };*/
+
 var party = [
     {name: 'Bat', id: 'bat1'},
     {name: 'Slime', id: 'slime'},
     {name: 'Bat', id: 'bat2'}
 ];
-
+var myGif = new Image();
+ myGif.src="https://i.pinimg.com/originals/f0/85/ed/f085edb76fdc6532771e82ecdf5c57f7.jpg";
 
 window.onload = function () {
     let num=2;
@@ -46,6 +48,8 @@ window.onload = function () {
     //console.log('Killed character:', charaID);
        
    });
+   var ctx = document.querySelector('canvas').getContext('2d');
+ctx.fillRect(100, 100, 100, 100);
+ctx.drawImage(myGif,0,0);
    
 }
-
